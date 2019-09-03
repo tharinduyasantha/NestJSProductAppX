@@ -1,0 +1,30 @@
+<div class="col-xs-6 col-md-10">
+  <mat-card>
+    <form [formGroup]="form" (submit)="AddProduct()">
+      <mat-form-field>
+
+        <input matInput placeholder="Product Name" formControlName="product_name">
+      </mat-form-field>
+      <br>
+
+
+
+      <mat-form-field>
+        <input matInput formControlName="product_description" placeholder="Description">
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <input matInput formControlName="product_price" placeholder="Price">
+
+      </mat-form-field>
+      <br>
+      <button mat-raised-button color="accent" type="submit">Add Products
+
+      </button>
+    </form>
+
+
+  </mat-card>
+
+
+</div>
